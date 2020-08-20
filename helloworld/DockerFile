@@ -1,0 +1,6 @@
+FROM openjdk:8
+ADD target/docker-hello-spring-boot.jar docker-hello-spring-boot.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "docker-hello-spring-boot.jar"]
+CMD ["-start"]
+

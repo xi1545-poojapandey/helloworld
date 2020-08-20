@@ -1,0 +1,6 @@
+FROM openjdk:8
+ADD target/docker-discovery-server-spring-boot.jar docker-discovery-server-spring-boot.jar
+EXPOSE 8087
+ENTRYPOINT ["java", "-jar", "docker-discovery-server-spring-boot.jar"]
+CMD ["-start"]
+
